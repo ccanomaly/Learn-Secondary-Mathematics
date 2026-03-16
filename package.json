@@ -1,0 +1,24 @@
+{
+  "name": "learn-secondary-mathematics",
+  "version": "1.0.0",
+  "description": "Educational site with Secondary Mathematics concepts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccanomaly/Learn-Secondary-Mathematics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ccanomaly/Learn-Secondary-Mathematics/issues"
+  },
+  "homepage": "https://github.com/ccanomaly/Learn-Secondary-Mathematics#readme",
+  "dependencies": {
+    "mathjax": "^4.1.1"
+  }
+}
