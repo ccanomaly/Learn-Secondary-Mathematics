@@ -1,0 +1,31 @@
+h1, h2, h3{
+    padding: 0;
+    margin: 0;
+}
+
+.example  {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background-color: lightblue;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.example .explanation {
+    padding-bottom: 5px;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+.content {
+    width: 20px;
+}
+
+.non-content {
+    display: flex;
+    flex-direction: column;
+}
