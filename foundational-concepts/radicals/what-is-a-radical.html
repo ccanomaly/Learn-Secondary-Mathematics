@@ -12,72 +12,84 @@
         };
     </script>
     <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
     <link rel = "stylesheet" href = "style.css">
+    
 </head>
 <body>
-    <header></header>
-    
-    <div class = "content"></div>
-    
-    <div class = "non-content">
-        <h1>What Is A Radical?</h1>
-
-        <div class = "new expression">
-            <div class = "explanation">The general form of a radical is defined like so,</div>
-            <div class = "explanation">$\sqrt[n]{x}$</div>
-
-            <div class = "explanation">
-                <div class = "symbol">$\sqrt{~~}$</div>
-                <div class = "definition">: Radical Symbol</div>
-
-                <div class = "symbol">$n$</div>
-                <div class = "definition">: Index</div>
-
-                <div class = "symbol">$x$</div>
-                <div class = "definition">: Radicand</div>
-            </div>
+    <header>
+        <div class = "left">
+            <div class = "hamburger">&equiv;</div>
+            <a href = "../../index.html">Home</a>
         </div>
 
-        <div class = "idea">
-            <h2>What does this mean mathematically?</h2>
-            <div class = "explanation">
-                A radical is seen as an expression that results in a number that can be multiplied
-                by itself n times to get the radicand (x).
+        <div class = "directions">
+            <button class = "back">Previous</button>
+            <button class = "next">Next</button>
+        </div>
+    </header>
+
+    <div class = "main">
+        <div class = "toc">
+            <div class = "table-contents">Lipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit sint fugiat, dignissimos eaque illum officiis? Non ullam error quibusdam. Perspiciatis quae autem molestiae quos natus consequatur officia impedit totam a.</div>
+        </div>
+        
+        <div class = "non-toc">
+            <h1>What Is A Radical?</h1>
+
+            <div class = "new-expression">
+                <div class = "explanation">The general form of a radical is defined like so,</div>
+                <div class = "expression">$\sqrt[n]{x}$</div>
+
+                <div class = "symbols">
+                <div>$\sqrt{\phantom{x}}$: Radical Symbol</div>
+                <div>$n$: Index</div>
+                <div>$x$: Radicand</div>
+                </div>
             </div>
-            <h3 class = "collapse">Example</h3>
-            <div class = "example">
-                <div class = "explanation">Evaluate the radical expression $\sqrt[3]{27}$. <br>
-                    To evaluate this radical, we need to come up with a number that we can mulitply itself by the index
-                    to get the radicand. In this case, the index is 3 and the radicand is 27, so we want to find a number
-                    that we can multiply itself by 3 times to get 27. 3 multiplied by itself 3 times is $3*3*3=27$. 
-                    Hence, the answer is: $\sqrt[3]{27}=3$
+
+            <div class = "idea">
+                <h2>What does this mean mathematically?</h2>
+                <div class = "explanation">
+                    A radical is seen as an expression that results in a number that can be multiplied
+                    by itself n times to get the radicand $(x)$.
+                </div>
+                <h3 class = "example">Example: Evaluate the radical expression $\sqrt[3]{27}$. <span class = "collapse">Show Solution</span> </h3>
+                <div class = "solution">
+                    <p>
+                        To evaluate this radical, we need to come up with a number that we can mulitply itself by 3 times
+                        to get the radicand. In this case, the index is 3 and the radicand is 27, so we want to find a number
+                        that we can multiply itself by 3 times to get 27. 3 multiplied by itself 3 times is $3*3*3=27$. 
+                        Hence, the answer is: $\sqrt[3]{27}=3$
+                    </p>
+                </div>
+            </div>
+
+            <div class = "new idea">
+                <h2>Root Terminology</h2>
+                <div class = "explanation">
+                    The conventional way to to express a radical expression out loud involves referring to the radical as "the $n^{\text{th}}$ 
+                    root of $x$," where $n$ is the index and $x$ is the radicand. 
+                </div>
+
+                <div class = "explanation">
+                    For example, $\sqrt[4]{16}$ is expressed as "the $4^{\text{th}}$ root of 16."
+                </div>
+            </div>
+
+            <div class = "new idea">
+                <h2>The special case when n is 2 or 3</h2>
+                <div class = "explanation">
+                    When you see a radical of the form $\sqrt{x}$, we call this the square root of $x$. In a square root
+                    there is no index present; by default, there is an invisible 2 there to denote that the square root
+                    is a radical with an index of 2. When a radical is in the form
+                    $\sqrt[3]{x}$, we call it the cube root of $x$.
                 </div>
             </div>
         </div>
-
-        <div class = "new idea">
-            <h2>Root Terminology</h2>
-            <div class = "explanation">
-                To the convention to express a radical expression out loud involves referring to the radical as "the $n^{\text{th}}$ 
-                root of $x$," where $n$ is the index and $x$ is the radicand. 
-            </div>
-
-            <div class = "explanation">
-                For example, $\sqrt[4]{16}$ is expressed as "the $4^{\text{th}}$ root of 16."
-            </div>
-        </div>
-
-        <div class = "new idea">
-            <h2>The special case when n is 2 or 3</h2>
-            <div class = "explanation">
-                When you see a radical of the form $\sqrt{x}$, we call this the square root of $x$. In a square root
-                there is no index present; by default, there is an invisible 2 there to denote that the square root
-                is a radical with an index of 2. When a radical is in the form
-                $\sqrt[3]{x}$, we call it the cube root of $x$.
-            </div>
-        </div>
     </div>
-    
     <script src = "logic.js"></script>
 </body>
 </html>

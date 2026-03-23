@@ -1,31 +1,137 @@
-h1, h2, h3{
-    padding: 0;
-    margin: 0;
+:root {
+    --primaryColor: #2890FA;
+    --textColor: black;
+    --largeFont: 'Montserrat';
+    --readFont: 'Roboto';
+    --backgroundColor: white;
+
 }
 
-.example  {
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primaryColor: #022446;
+    --backgroundColor: #181818;
+    --textColor: white;
+  }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    margin: 0;  
+}
+
+div, p, a{
+    font-family: 'Roboto';
+}
+
+
+h1, h2, h3{
+    font-family: 'Montserrat';
+    padding: 0;
+}
+
+h1, h2 {
+    margin: 15px 0;
+}
+
+header {
+    display: flex;
+    background-color: var(--primaryColor);
+    justify-content: space-between;
+    align-items: center;
+}   
+
+.hamburger {
+    padding: 10px;
+}
+
+.left {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left a {
+    text-decoration: none;
+    color: var(--textColor);
+    font-weight: bold;
+}
+
+.next {
+    margin-right: 10px;
+}
+
+.main {
+    display: flex;
+    overflow: hidden;
+}
+
+.collapse {
+    border: solid;
+    border-radius: 10px;
+    border-color: var(--primaryColor);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 2px;
+ 
+}
+
+.solution  {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
-  background-color: lightblue;
+  border: solid;
+  border-width: 3px;
+  border-radius: 3px;
+  border-color: var(--primaryColor);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 .example .explanation {
-    padding-bottom: 5px;
+    padding: 5px 5px;
 }
 
-body {
+
+
+.toc {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.table-contents {
+    max-width: 0;
+    overflow: hidden;
+    transition: max-width 0.4s ease;
+}
+
+.non-toc {
+    flex-shrink: 1;
     display: flex;
-    min-height: 100vh;
+    flex-direction: column;
+    margin: 0 100px;
+    overflow: visible;
 }
 
-.content {
-    width: 20px;
-}
-
-.non-content {
+.new-expression {
     display: flex;
     flex-direction: column;
 }
+
+
+.expression {
+    align-self: center;
+}
+
+.symbols {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
