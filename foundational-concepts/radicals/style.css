@@ -45,6 +45,22 @@ header {
     align-items: center;
 }   
 
+.directions {
+    margin-right: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.arrow {
+    border-style: solid;
+    border-color: black;
+    padding: 5px;
+}
+
+.arrow:hover {
+    background-color: oklch(from var(--primaryColor) calc(l - 0.1) c h);
+}
+
 .hamburger {
     padding: 10px;
 }
@@ -78,7 +94,7 @@ header {
     font-weight: 500;
     font-size: 15px;
     padding: 2px;
- 
+    white-space: nowrap;    
 }
 
 .solution  {

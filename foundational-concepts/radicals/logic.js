@@ -1,10 +1,12 @@
 const collapsibles = document.getElementsByClassName("collapse");
 const horizCollapsibles = document.getElementsByClassName("hamburger");
+const arrows = document.getElementsByClassName("arrow");
 let i = collapsibles.length;
 
 for (i=0; i<collapsibles.length;i++){
     collapsibles[i].addEventListener("click", (event) =>{
-        let content = document.querySelector (".solution");
+        let content = event.currentTarget.parentElement.nextElementSibling;
+        console.log(content)
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
         } else {
@@ -26,9 +28,4 @@ for (i=0; i<collapsibles.length;i++){
             
         }
     })   
-}
-
-
-function getGrandParentElement (node) {
-    return node.parentElement.parentElement;
 }
