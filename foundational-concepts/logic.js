@@ -1,3 +1,4 @@
+
 const collapsibles = document.getElementsByClassName("collapse");
 const horizCollapsibles = document.getElementsByClassName("hamburger");
 const arrows = document.getElementsByClassName("arrow");
@@ -15,7 +16,7 @@ for (i=0; i<collapsibles.length;i++){
     })   
 }
 
-for (i=0; i<collapsibles.length;i++){
+for (i=0; i<horizCollapsibles.length;i++){
     horizCollapsibles[i].addEventListener("click", (event) =>{
         let content = document.querySelector(".table-contents");
         let nonContent = document.querySelector(".non-toc");

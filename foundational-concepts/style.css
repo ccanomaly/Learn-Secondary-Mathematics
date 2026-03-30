@@ -114,12 +114,6 @@ header {
 }
 
 
-
-.toc {
-    flex-shrink: 0;
-    flex-grow: 1;
-}
-
 .table-contents {
     max-width: 0;
     overflow: hidden;
@@ -150,4 +144,3 @@ header {
     gap: 15px;
     flex-wrap: wrap;
 }
-
