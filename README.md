@@ -1,2 +1,2 @@
 # Learn-Secondary-Mathematics
-Educational site with Secondary Mathematics concepts
+Educational site to learn or review important Secondary Mathematics concepts (In progress!)
