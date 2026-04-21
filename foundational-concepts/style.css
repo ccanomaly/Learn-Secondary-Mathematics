@@ -55,6 +55,8 @@ header {
     border-style: solid;
     border-color: black;
     padding: 5px;
+    color: var(--textColor);
+    text-decoration: none;
 }
 
 .arrow:hover {
@@ -143,4 +145,28 @@ header {
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.unit {
+    display: flex;
+    flex-direction: column;
+}
+
+.unit h3 {
+    margin: 0;
+}
+
+.topic {
+    align-self: flex-end;
+    color: var(--textColor);
+}
+
+.trig-ratios {
+    font-size: 30px;
 }

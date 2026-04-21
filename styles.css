@@ -53,3 +53,7 @@ ul {
 a {
     color: var(--textColor);
 }
+
+footer {
+    color: var(--textColor);
+}
