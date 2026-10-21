@@ -133,6 +133,7 @@ header {
 .new-expression {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 
@@ -169,4 +170,14 @@ header {
 
 .trig-ratios {
     font-size: 30px;
+}
+
+.problem-set {
+    border-style: solid;
+    border-color: var(--primaryColor);
+    padding: 0 10px;
+}
+
+.problem-set h2 {
+    margin-top: 5px;
 }

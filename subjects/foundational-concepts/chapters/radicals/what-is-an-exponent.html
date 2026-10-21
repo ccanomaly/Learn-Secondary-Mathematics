@@ -54,7 +54,7 @@
                 <div class = "explanation">
                     <p>
                         An explanation of exponent is best show by example. Let's take the expression $5\cdot5$. We see that 5 is being multiplied by itself 2 times,
-                        so we can then say $5\cdot5=5^2$. The exponent signifies the amount of times the base is going to multiply itself by. In the case of $5^2$, we
+                        so we can then say $5\=5^2$. The exponent signifies the amount of times the base is going to multiply itself by. In the case of $5^2$, we
                         see that it is the base of 5 being multiplied by itself 2 times.
                     </p>
                     <p>
@@ -64,7 +64,7 @@
 
                 </div>
                 <h3 class = "example">Rewrite $2\cdot2\cdot2\cdot2$ as an exponential expression. <span class = "collapse">Show Solution</span> </h3>
-                <div class = "solution   ">
+                <div class = "solution">
                     <p>
                         To rewrite this expression as an exponential expression, we first recognize there is <span class = "bold">repeated</span>
                         multiplication of the same number, 2. We then count how many times 2 is multiplied. In this case, it is 4 times. 
@@ -87,7 +87,50 @@
             <div class = "new idea">
                 <h2>What does it mean to have a number to the power of zero?</h2>
                 <div class = "explanation">
-                    
+                    <p>
+                        Let us look at some powers of 3 to see if we can figure out what $3^0$ means.
+                    </p>
+                    <div class = "new-expression">
+                        <div>$3^3 = 3*3*3$</div>
+                        <div>$3^2 = 3*3$</div>
+                        <div>$3^1 = 3$</div>
+                        <div>$3^0 =$ ?</div>
+                    </div>
+                    <p>Take a second to see if there is some sort of pattern as you descend powers.
+                        Below is how we derive $3^0$.
+                    </p>
+                    <div class = "new-expression">
+                        <div>$3^3 = \underbrace{3*3*\cancel{3}}_{\text{divide by 3 }}$
+                        </div>
+                        <div>$3^2=\underbrace{3*\cancel{3}}_{\text{divide by 3}}$
+                        </div>
+                        <div>
+                            $3^1=\underbrace{\cancel{3}}_{\text{divide by 3}}$
+                        </div>
+                        <div>$3^0=1$</div>
+                    </div>
+                    <p>We see that if we keep dividing by three one a time, the exponent decreases
+                        by 1. This logic follows even when the exponent is 1, meaning when we divide $3^1$ by three,
+                        we get three $3^0$. And since $3^1=3$ and $3/3=1$, it then follows that $3^0 = 1$.
+                    </p>
+                    <p>
+                        This explanation works for any real number! If we let $a$ represent any real number (think
+                        of it as a placeholder/variable that we can plug any real number into), we then follow the same
+                        logic as before.
+                    </p>
+                    <div class = "new-expression">
+                        <div>$a^3 = \underbrace{a*a*\cancel{a}}_{\text{divide by a }}$
+                        </div>
+                        <div>$a^2=\underbrace{a*\cancel{a}}_{\text{divide by a}}$
+                        </div>
+                        <div>
+                            $a^1=\underbrace{\cancel{a}}_{\text{divide by a}}$
+                        </div>
+                        <div>$a^0=1$</div>
+                    </div>
+                    <p>$a$ divided by $a$ is one since anything divided by itself is one, therefore any number
+                    to the power of zero is one!
+                    </p>
                 </div>
             </div>
         </div>
